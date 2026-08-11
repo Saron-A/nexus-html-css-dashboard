@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_off"
+    />
+    <link rel="stylesheet" href="./assets/style/signinstyle.css" />
+    <title>Sign In</title>
   </head>
   <body>
     <main>
-      <section aria-label="Sign in heading">
+      <section aria-label="Sign in heading" class="header">
         <figure>
           <img
-            src="./assets/images/global_performance_summary.jpg"
+            src="./assets/images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg"
             alt=""
             width="600px"
             height="400px"
@@ -18,26 +23,40 @@
           <figcaption></figcaption>
         </figure>
       </section>
-      <section aria-label="Sign in form">
+      <section aria-label="Sign in form" class="form">
         <header>
           <h1>Sign In</h1>
         </header>
         <form action="">
           <div class="label-input">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" placeholder="Email" />
           </div>
           <div class="label-input">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
           </div>
-          <!--Icon? remember me-->
-          <button type="submit">Sign in</button>
+          <div class="rememberMe">
+            <span class="material-symbols-outlined toggle-icon">
+              toggle_off
+            </span>
+            Remember me
+          </div>
+
+          <button type="submit">Sign In</button>
         </form>
 
         <div class="otherActivities">
-          <a href="">Forgot your password?</a>
-          <p>Don't have an account? <a href="/signup.html">Sign up</a></p>
+          <p id="forgotPass">Forgot your password?</p>
+          <p id="noAccount">
+            Don't have an account? <a href="./signup.html">Sign Up </a>
+          </p>
         </div>
       </section>
     </main>
