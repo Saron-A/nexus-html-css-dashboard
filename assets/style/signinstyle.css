@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111111;
+  color: #ffffff;
+  font-family: Inter;
+}
+
+main {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  font-size: 16px;
+}
+
+button {
+  background-color: #3bb2f6;
+  color: #ffffff;
+  border-radius: 0.125rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+}
+.form header {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form header h1 {
+  font-size: 48px;
+  font-style: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label-input input {
+  border-radius: 0.5rem;
+  border: none;
+  height: 1.5rem;
+  background-color: #1e1e1e;
+  padding: 0.25rem;
+}
+
+.label-input input::placeholder {
+  font-size: 14px;
+  font-weight: light;
+}
+.rememberMe {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 14px;
+  align-items: center;
+}
+
+.otherActivities {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0;
+}
+
+#forgotPass {
+  font-size: 14px;
+  text-align: center;
+  color: #3bb2f6;
+}
+
+.otherActivities p a {
+  color: #3bb2f6;
+  text-decoration: none;
+}
+#noAccount {
+  font-size: 14px;
+  margin-top: 1rem;
+}
