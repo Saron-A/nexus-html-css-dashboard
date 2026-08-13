@@ -9,6 +9,11 @@
   font-family: Inter;
 }
 
+.form,
+.mobile-nav nav {
+  display: none;
+}
+
 main {
   display: flex;
   gap: 2rem;
@@ -113,6 +118,30 @@ button {
 
 /* Mobile Responsive design */
 @media (max-width: 480px) {
+  header.mobile-nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .mobile-nav * {
+    background-color: #1e1e1e;
+  }
+
+  .mobile-nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97vw;
+    padding: 0.5rem 0.75rem;
+  }
+  #logo {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
   main {
     /* display: flex; */
     flex-direction: column;
