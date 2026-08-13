@@ -99,6 +99,8 @@ form button {
     flex-direction: column;
     gap: 1.5rem;
     padding-top: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
+    height: 100%;
   }
 
   .imgClass {
