@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+aside {
+  flex: 0.5;
+  padding: 3rem 0.5rem 0.5rem;
+  /* border: 1rem solid black; */
+}
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+}
+
+aside nav .aside1,
+.aside2,
+.aside3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 0.5rem solid blue; */
+  height: 100%;
+  align-items: center;
+}
+
+.sub-container {
+  flex: 2;
+}
