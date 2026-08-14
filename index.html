@@ -13,7 +13,7 @@
     </style>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings,notifications_unread,search"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings,notifications_unread,search,wallet,language,video_file,shopping_cart,format_quote"
     />
     <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
@@ -64,10 +64,35 @@
 
       <main>
         <section aria-labelledby="activity-information" class="activitySummary">
-          <article aria-label="today's money"></article>
-          <article aria-label="today's users"></article>
-          <article aria-label="new clients"></article>
-          <article aria-label="total sales"></article>
+          <article aria-label="today's money">
+            <p>
+              Today's Money
+              <br />
+              <span> <b>$53,000</b></span>
+            </p>
+            <span class="material-symbols-outlined">wallet</span>
+          </article>
+          <article aria-label="today's users">
+            <p>
+              Today's Users
+              <br />
+              <span><b>2,300</b></span>
+            </p>
+            <span class="material-symbols-outlined">language</span>
+          </article>
+          <article aria-label="new clients">
+            <p>
+              New Client <br />
+              <span> <b>+3,052</b></span>
+            </p>
+            <span class="material-symbols-outlined">video_file</span>
+          </article>
+          <article aria-label="total sales">
+            <p>
+              Total Sales <br /><span> <b>$173,000</b></span>
+            </p>
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </article>
         </section>
 
         <section class="main-container" aria-labelledby="dashboard-overview">
@@ -81,21 +106,19 @@
                 <small>Welcome back,</small> <br />
                 Mark Johnson
               </h2>
-              <p>
-                Welcome to Mark Johnson, Welcome a high quality professional
-                portrait. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Voluptas impedit dolore commodi culpa autem nisi, id rerum
-                quibusdam debitis quos facere at. Quisquam facere numquam nihil
-                reiciendis voluptates doloremque vero!
-              </p>
-
-              <button>Tap to record</button>
             </header>
+            <p>
+              Welcome to Mark Johnson, Welcome a high quality professional
+              portrait. We inelp you to orant your monsroon. enonging and
+              benefits.
+            </p>
+
+            <button>Tap to record</button>
           </article>
 
           <article class="feedback">
             <h3>Customer Feedback</h3>
-            <i>quotation icon</i>
+            <span class="material-symbols-outlined">format_quote</span>
             <p>
               "Excellent service and intuitive platform! Highly recommend."
               <br />
@@ -103,7 +126,7 @@
             </p>
           </article>
 
-          <article>
+          <article class="referrals">
             <h3>Recent Referrals</h3>
             <figure>
               <img
