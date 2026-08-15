@@ -299,7 +299,7 @@ section.performanceSummary .subDiv figure figcaption {
   .container {
     display: flex;
     flex-direction: column;
-
+    gap: 0.5rem;
     width: fit-content;
     border: 0.125rem solid red;
     max-height: 100%;
@@ -361,5 +361,68 @@ section.performanceSummary .subDiv figure figcaption {
     height: fit-content;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .sub-container header#info-nav {
+    justify-content: space-evenly;
+    gap: 0;
+    /* border: 0.125rem solid blue; */
+    padding: 0.75rem 0.5rem;
+    height: 7rem;
+  }
+
+  .sub-container header#info-nav .search {
+    justify-content: row-reverse;
+    /* border: 0.0625rem solid violet; */
+    padding: 1rem 0.75rem;
+    gap: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .sub-container header#info-nav .search span {
+    position: relative;
+    left: 3rem;
+    color: #94a3b8;
+  }
+
+  .sub-container header#info-nav .search input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    justify-self: flex-start;
+
+    /* background-color: pink; */
+  }
+
+  .sub-container header#info-nav .search input::placeholder {
+    font-size: 1.25rem;
+    padding-left: 2.75rem;
+    font-weight: normal;
+    color: #94a3b8;
+  }
+
+  .sub-container header#info-nav .settings {
+    width: 60%;
+    font-size: 2rem;
+  }
+  .sub-container header#info-nav .settings .material-symbols-outlined {
+    font-size: 2.25rem;
+  }
+
+  .sub-container header#info-nav .settings img {
+    height: 50px;
+    width: 65px;
+  }
+
+  main {
+  }
+
+  main .activitySummary {
+    flex-direction: column;
+  }
+  main .main-container {
+    flex-direction: column;
   }
 }
