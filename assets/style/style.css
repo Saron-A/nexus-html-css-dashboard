@@ -421,7 +421,40 @@ section.performanceSummary .subDiv figure figcaption {
 
   main .activitySummary {
     flex-direction: column;
+    /* border: 0.125rem solid burlywood; */
+    padding: 0.25rem 0.5rem;
   }
+
+  main .activitySummary article {
+    padding: 1.5rem 1em;
+    border-radius: 1.5rem;
+    font-size: larger;
+  }
+
+  main .activitySummary article.money {
+    background: linear-gradient(to right, #424552, #2c2f38);
+    /* #353843; */
+  }
+
+  main .activitySummary article.users {
+    background: linear-gradient(to right, #1e64b9, #174a89);
+  }
+
+  main .activitySummary article.clients {
+    background: linear-gradient(to right, #218777, #14584e);
+  }
+
+  main .activitySummary article.sales {
+    background: linear-gradient(to right, #693ab6, #45237e);
+  }
+
+  main .activitySummary article .material-symbols-outlined {
+    font-size: 2.5rem;
+    /* background-color: pink; */
+    padding: 0.25rem;
+    border-radius: 1rem;
+  }
+
   main .main-container {
     flex-direction: column;
   }
