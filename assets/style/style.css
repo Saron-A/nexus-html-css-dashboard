@@ -441,8 +441,10 @@ section.performanceSummary .subDiv figure figcaption {
   .aside1 {
     flex: 1;
   }
-  .aside2 {
+  aside nav .aside2 {
     flex: 0.85;
+    flex-direction: row;
+    justify-content: space-between;
   }
   aside nav .aside3 {
     flex: 0.3;
