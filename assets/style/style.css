@@ -22,21 +22,20 @@ aside {
   margin: 1rem;
   border-radius: 1rem;
   border: 0.0625rem solid #94a3bb;
-  /* border: 1rem solid black; */
+  /* border: 1rem solid brown; */
 }
 
 aside nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 3rem;
   height: 100%;
 }
 
-aside nav .aside1,
-.aside2 {
+aside nav .aside1 {
   display: flex;
-  flex: 1.25;
+  flex: 1.2;
   flex-direction: column;
   justify-content: space-evenly;
   /* border: 0.5rem solid blue; */
@@ -44,6 +43,16 @@ aside nav .aside1,
   align-items: flex-start;
   padding-left: 1.75rem;
   width: 100%;
+}
+
+aside nav .aside2 {
+  display: flex;
+  flex: 0.9;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 1rem;
+  /* border: 0.125rem solid brown; */
 }
 
 aside nav div a {
@@ -88,13 +97,16 @@ img {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-  /* border: 0.25rem solid black; */
+  /* border: 0.25rem solid brown; */
   align-items: center;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
+  height: 4rem;
 }
 
 .sub-container header#info-nav .search {
   display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .sub-container header#info-nav .search span {
@@ -113,12 +125,13 @@ img {
   background-color: gray;
   color: white;
   border: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 5rem;
 }
 .sub-container header#info-nav .search input::placeholder {
-  color: white;
-  font-weight: 100;
-  font-size: small;
+  color: #94a3b8;
+  font-weight: 300;
+  font-size: smaller;
   padding-left: 1.5rem;
 }
 
@@ -152,7 +165,7 @@ main {
 .activitySummary article {
   padding: 0.5rem 1.5rem;
   border: 0.0625rem solid #94a3bb;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -287,9 +300,11 @@ main .activitySummary article.sales {
 section.performanceSummary {
   display: flex;
   gap: 1rem;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem;
   height: 350px;
+  /* border: 0.125rem solid brown; */
 }
 
 section.performanceSummary .img,
@@ -381,20 +396,24 @@ section.performanceSummary .subDiv figure figcaption {
     max-height: 100%;
     height: 100%;
     padding: 1rem 0.5rem;
+    background-color: #121316;
   }
   aside {
     width: 95%;
-    padding: 1.5rem 2rem;
-    height: 150px;
+    padding: 1rem;
+
     position: sticky;
     top: 0;
+    border-radius: 2rem;
+    border: none;
+    background-color: #202126;
   }
   aside nav {
     flex-direction: row;
     overflow: wrap;
     gap: 0;
     width: 100%;
-    height: 100%;
+    height: 70px;
   }
   aside nav div a .desc {
     display: none;
@@ -403,6 +422,7 @@ section.performanceSummary .subDiv figure figcaption {
   aside nav div a .material-symbols-outlined {
     font-size: 2.5rem;
     color: rgb(225, 222, 222);
+    align-self: center;
   }
 
   /* aside nav div a .material-symbols-outlined {
@@ -416,6 +436,7 @@ section.performanceSummary .subDiv figure figcaption {
     justify-content: space-between;
     /* border: 0.0625rem solid blue; */
     align-items: center;
+    padding-left: 0;
   }
   .aside1 {
     flex: 1;
@@ -427,7 +448,7 @@ section.performanceSummary .subDiv figure figcaption {
     flex: 0.3;
     background-color: transparent;
     padding-bottom: 0;
-    /* border: 0.125rem solid blue; */
+    align-self: center;
     /* height: fit-content;
      */
   }
@@ -470,6 +491,7 @@ section.performanceSummary .subDiv figure figcaption {
     height: 100%;
     border-radius: 5rem;
     justify-self: flex-start;
+    background-color: #2b2c32;
 
     /* background-color: pink; */
   }
@@ -502,8 +524,8 @@ section.performanceSummary .subDiv figure figcaption {
 
   main .activitySummary article {
     padding: 1.5rem 1em;
-    border-radius: 1.5rem;
-    font-size: larger;
+    border-radius: 1.95rem;
+    font-size: x-large;
   }
 
   main .activitySummary article.money {
@@ -533,6 +555,7 @@ section.performanceSummary .subDiv figure figcaption {
   main .main-container {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
     /* height: 40rem; */
   }
 
@@ -546,6 +569,8 @@ section.performanceSummary .subDiv figure figcaption {
     gap: 1.5rem;
     font-size: larger;
     border-radius: 1.75rem;
+    width: 100%;
+    background-color: #202126;
   }
   .main-container .hero header {
     font-size: larger;
@@ -632,6 +657,7 @@ section.performanceSummary .subDiv figure figcaption {
   main .performanceSummary .img {
     gap: 0.5rem;
     border-radius: 1.5rem;
+    background-color: #202126;
   }
 
   main .performanceSummary .img figcaption {
@@ -649,11 +675,17 @@ section.performanceSummary .subDiv figure figcaption {
     border-radius: 1.5rem;
     padding: 2rem;
     grid-template: repeat(2, 250px) / repeat(2, 200px);
+    background-color: #202126;
+  }
+
+  main .performanceSummary .subDiv figure {
+    border: 1px solid #94a3b8;
   }
 
   .performanceSummary .subDiv .subDivImg figcaption {
     padding: 1rem;
     line-height: 1.5;
+    background-color: #202126;
   }
 
   .performanceSummary .subDiv .subDivImg figcaption span {
