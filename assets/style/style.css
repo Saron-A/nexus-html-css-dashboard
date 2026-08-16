@@ -97,6 +97,12 @@ img {
   display: flex;
 }
 
+.sub-container header#info-nav .search span {
+  position: relative;
+  left: 2rem;
+  color: #94a3b8;
+}
+
 .sub-container header#info-nav .search span .search-icon {
   align-self: center;
   font-weight: 200;
@@ -113,6 +119,7 @@ img {
   color: white;
   font-weight: 100;
   font-size: small;
+  padding-left: 1.5rem;
 }
 
 .sub-container header#info-nav .settings {
@@ -157,10 +164,28 @@ main {
   font-weight: light;
 }
 
+main .activitySummary article.money {
+  background: linear-gradient(to right, #424552, #2c2f38);
+  /* #353843; */
+}
+
+main .activitySummary article.users {
+  background: linear-gradient(to right, #1e64b9, #174a89);
+}
+
+main .activitySummary article.clients {
+  background: linear-gradient(to right, #218777, #14584e);
+}
+
+main .activitySummary article.sales {
+  background: linear-gradient(to right, #693ab6, #45237e);
+}
+
 .main-container {
   /* border: 0.125rem solid white; */
   display: flex;
   gap: 1.5rem;
+  align-items: flex-start;
 }
 
 .hero,
@@ -176,7 +201,7 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 .hero header {
@@ -201,15 +226,62 @@ main {
   line-height: 1.45;
   font-weight: light;
 }
+
+.hero button {
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  /* font-size: 1.2rem; */
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+}
+
+.main-container .feedback .material-symbols-outlined {
+  font-size: 3rem;
+  font-weight: light;
+}
+
 .feedback {
   flex: 0.5;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .referrals {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.referrals figure {
+  /* border: 0.125rem solid brown; */
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.referrals figure img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.referrals figure figcaption {
+  padding: 0.5rem;
+  /* font-size: larger;
+  line-height: 1.4; */
+  flex: 0.33;
+  margin-bottom: 0;
+}
+
+.main-container .referrals figure figcaption span {
+  font-size: 1rem;
+  color: #99a1aa;
+  margin-bottom: 0;
 }
 
 section.performanceSummary {
@@ -294,6 +366,10 @@ section.performanceSummary .subDiv figure figcaption {
   text-align: center;
 }
 
+.performanceSummary .subDiv .subDivImg figcaption span {
+  color: #33c793;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 480px) {
   .container {
@@ -301,7 +377,7 @@ section.performanceSummary .subDiv figure figcaption {
     flex-direction: column;
     gap: 0.5rem;
     width: fit-content;
-    border: 0.125rem solid red;
+    /* border: 0.125rem solid red; */
     max-height: 100%;
     height: 100%;
     padding: 1rem 0.5rem;
@@ -310,6 +386,8 @@ section.performanceSummary .subDiv figure figcaption {
     width: 95%;
     padding: 1.5rem 2rem;
     height: 150px;
+    position: sticky;
+    top: 0;
   }
   aside nav {
     flex-direction: row;
@@ -416,9 +494,6 @@ section.performanceSummary .subDiv figure figcaption {
     width: 65px;
   }
 
-  main {
-  }
-
   main .activitySummary {
     flex-direction: column;
     /* border: 0.125rem solid burlywood; */
@@ -457,5 +532,131 @@ section.performanceSummary .subDiv figure figcaption {
 
   main .main-container {
     flex-direction: column;
+    gap: 2rem;
+    /* height: 40rem; */
+  }
+
+  .main-container .hero,
+  .feedback,
+  .referrals {
+    padding: 2rem 1rem;
+    font-size: larger;
+    /* border-color: pink;
+    background-color: pink; */
+    gap: 1.5rem;
+    font-size: larger;
+    border-radius: 1.75rem;
+  }
+  .main-container .hero header {
+    font-size: larger;
+    align-items: center;
+  }
+
+  .main-container .hero header h2 {
+    font-size: 2rem;
+  }
+
+  .main-container .hero header h2 small {
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  .main-container .hero p,
+  .feedback p {
+    font-size: 1.35rem;
+    line-height: 1.4;
+    font-weight: light;
+    color: #99a1aa;
+  }
+
+  .main-container .hero button {
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .main-container .feedback .material-symbols-outlined {
+    font-size: 5rem;
+    font-weight: light;
+  }
+
+  .main-container .referrals {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-container .referrals h3 {
+    flex: 0.5;
+    font-size: x-large;
+  }
+
+  .main-container .referrals figure {
+    flex: 1.5;
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .main-container .referrals figure img {
+    width: 100%;
+    object-fit: cover;
+    flex: 2;
+    height: 150px;
+    border-radius: 1rem;
+  }
+
+  .main-container .referrals figure figcaption {
+    padding: 1rem 0.5rem;
+    font-size: larger;
+    line-height: 1.4;
+  }
+
+  .main-container .referrals figure figcaption span {
+    font-size: 1.2rem;
+    color: #99a1aa;
+  }
+
+  main .performanceSummary {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #373838; */
+    /* border: 0.125rem solid cyan; */
+    padding: 0;
+    height: 100%;
+    gap: 1.5rem;
+  }
+  main .performanceSummary .img {
+    gap: 0.5rem;
+    border-radius: 1.5rem;
+  }
+
+  main .performanceSummary .img figcaption {
+    font-size: larger;
+    line-height: 1.5;
+  }
+
+  main .performanceSummary .img figcaption span {
+    color: #99a1aa;
+  }
+
+  main .performanceSummary .subDiv {
+    width: 100%;
+    /* border: 0.125rem solid blue; */
+    border-radius: 1.5rem;
+    padding: 2rem;
+    grid-template: repeat(2, 250px) / repeat(2, 200px);
+  }
+
+  .performanceSummary .subDiv .subDivImg figcaption {
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  .performanceSummary .subDiv .subDivImg figcaption span {
+    color: #33c793;
   }
 }
